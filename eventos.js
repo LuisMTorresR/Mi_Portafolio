@@ -34,7 +34,6 @@ window.addEventListener('click', function(e){
 
 var perfil = document.getElementById('perfil');
 var animacion = document.getElementById('listaPerfil');
-alert(animacion.getElementsByTagName);
 
 if (screen.width < 1366 && screen.height < 768) {
   perfil.classList.add('perfil2');
