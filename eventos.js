@@ -2,10 +2,10 @@
 
 var menu = document.getElementById('menu');
 var altura = menu.offsetTop;
-window.addEventListener('scroll', function(){
-  if(window.pageYOffset > altura){
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > altura) {
     menu.classList.add('fixed');
-  } else{
+  } else {
     menu.classList.remove('fixed');
   }
 });
@@ -17,16 +17,16 @@ var flex = document.getElementById('flex');
 var abrir = document.getElementById('abrir');
 var cerrar = document.getElementById('close');
 
-abrir.addEventListener('click', function(){
+abrir.addEventListener('click', function () {
   modal.style.display = 'block';
 });
 
-cerrar.addEventListener('click', function(){
+cerrar.addEventListener('click', function () {
   modal.style.display = 'none';
 });
 
-window.addEventListener('click', function(e){
-  if (e.target == flex){
+window.addEventListener('click', function (e) {
+  if (e.target == flex) {
     modal.style.display = 'none';
   }
 
@@ -35,7 +35,8 @@ window.addEventListener('click', function(e){
 var perfil = document.getElementById('perfil');
 var animacion = document.getElementById('listaPerfil');
 
-if (screen.width < 1366 && screen.height < 768){
+
+if ((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/iPhone/i))) {
   perfil.classList.add('perfil2');
   animacion.classList.add('animacion2');
 } else {
