@@ -7,6 +7,7 @@
 
 body{
   background-image: url(imagenes/11772-hd-1080p.jpg);
+  background-attachment: fixed;
 }
 
 .contenedor1{
@@ -39,6 +40,15 @@ text-align: center;
   margin-top: 50px;
   margin-right: 30px;
 }
+
+.perfil2{
+  display: inline-flex;
+  float: right;
+  font-size: 38px;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
 
 #desarrollador{
   margin-right: 20px;
